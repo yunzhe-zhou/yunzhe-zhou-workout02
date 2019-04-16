@@ -6,13 +6,13 @@ ui=fluidPage(
     column(4,
            div(class = "option-group",
                sliderInput(inputId="amount",
-                           label="Initail Amount",
+                           label="Initial Amount",
                            value=1000,min=0,max=100000, pre = "$", sep = ",",step=500)
            )),
     column(4,
            div(class = "option-group",
                sliderInput(inputId="rate",
-                           label="Return Rate(in %)",
+                           label="Return Rate (in %)",
                            value=5,min=0,max=20,step=0.1)
            )),
     column(4,
@@ -33,7 +33,7 @@ ui=fluidPage(
     column(4,
            div(class = "option-group",
                sliderInput(inputId="growth",
-                           label="Growth Rate(in %)",
+                           label="Growth Rate (in %)",
                            value=2,min=0,max=20,step=0.1)
            )),
     column(4, 
@@ -43,9 +43,7 @@ ui=fluidPage(
                        
            ))
   ),
-  fluidRow(
-    HTML('<hr>')
-  ),
+  hr(),
   h3("Timelines"),
   plotOutput("plot1"),
   
