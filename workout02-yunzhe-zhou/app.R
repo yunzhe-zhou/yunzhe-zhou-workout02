@@ -19,7 +19,7 @@ ui=fluidPage(
            div(class = "option-group",
                sliderInput(inputId="years",
                            label="Years",
-                           value=10,min=0,max=50,step=1)
+                           value=20,min=0,max=50,step=1)
            ))
   ),
   
